@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solutions | Palpeg</title>
+<link rel="stylesheet" href="style_slack.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">
+  <img src="Logo.png" alt="Slack logo">
+    </div>
+
+  <!-- HAMBURGER -->
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+
+  <!-- NAV MENU -->
+  <nav id="navMenu">
+    <a class="nav-link" href="features.html">Features</a>
+    <a class="nav-link" href="solutions.html">Solutions</a>
+    <a class="nav-link" href="enterprise.html">Enterprise</a>
+    <a class="nav-link" href="resources.html">Resources</a>
+    <a class="nav-link" href="pricing.html">Pricing</a>
+  </nav>
+
+  <!-- BACK & SIGN UP BUTTONS -->
+  <div class="back-container">
+    <a href="index_slack.html" class="btn-outline back-link">← Back to Home</a>
+  </div>
+  <div class="nav-buttons">
+    <button class="btn-primary" id="navSignUp">Sign Up</button>
+  </div>
+</header>
+
+<section class="features-hero">
+  <h1>Solutions for every team</h1>
+  <p>Slack brings people, processes, and tools together.</p>
+</section>
+
+<section class="audience-wrapper">
+  <div class="audience-box">
+    <h3>BY DEPARTMENT</h3>
+    <ul>
+      <li>Engineering</li>
+      <li>IT</li>
+      <li>Customer Service</li>
+      <li>Sales</li>
+      <li>Project Management</li>
+      <li>Marketing</li>
+      <li>Human Resources</li>
+      <li>Security</li>
+    </ul>
+  </div>
+
+  <div class="audience-box">
+    <h3>BY INDUSTRY</h3>
+    <ul>
+      <li>Manufacturing, Auto & Energy</li>
+      <li>Technology</li>
+      <li>Media</li>
+      <li>Small Business</li>
+      <li>Financial Services</li>
+      <li>Retail</li>
+      <li>Education</li>
+      <li>Health & Life Sciences</li>
+    </ul>
+  </div>
+</section>
+
+
+
+<!-- HAMBURGER SCRIPT -->
+<script>
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
