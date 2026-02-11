@@ -6,12 +6,22 @@
   min-width: 0;
 }
 
+html, body{
+  width: 100%;
+  height: 100%;
+}
 body {
-  background: #611f69 url("bg.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+
+background:
+    linear-gradient(
+      rgba(97, 31, 105, 0.8),
+      rgba(97, 31, 105, 0.8)
+    ),
+    url("bg.jpg") center / cover no-repeat;
   color: white;
   max-width: 100%;
   overflow-x: hidden;
-  opacity: 0;
   transform: translateY(10px);
   animation: pageEnter 0.45s ease forwards;
   will-change: transform;
@@ -47,7 +57,7 @@ body {
   padding: 20px 60px;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 9999;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
@@ -131,9 +141,9 @@ nav {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding: 120px 80px;
-  background: #4a154b;
   min-height: 100vh;
   gap: 40px;
+  background: rgba(97, 31, 105, 0.65);
 }
 
 
@@ -282,7 +292,7 @@ nav {
   background: rgba(0,0,0,0.45);
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 10;
 }
 
 .modal-box {
@@ -342,7 +352,7 @@ nav {
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 9998;
 }
 
 .hamburger span {
