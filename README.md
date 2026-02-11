@@ -1,0 +1,1 @@
+This is strictly for project purposes only. This Slack-like website is not intended to clone, replicate, or replace Slack, and is created solely for educational and non-commercial use.All trademarks, logos, and brand names belong to their respective owners.
