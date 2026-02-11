@@ -52,15 +52,20 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1px;              /* space between the two images */
   font-size: 24px;
   font-weight: 700;
   color: white;
+  text-decoration: none; /* if logo is inside <a> */
 }
 
 .logo img {
-  width: 100px;
-  height: auto;
+  height: 30px;          /* unified height looks cleaner */
+  width: auto;           /* keeps aspect ratio */
+  display: block;        /* removes tiny gaps */
+}
+.logo-icon {
+  height: 100px;  /* ONLY Logo.png is resized */
 }
 
 nav {
@@ -80,6 +85,7 @@ nav {
   text-decoration: none;
   border-radius: 5px;
   transition: background 0.2s;
+  margin: 0 auto;
 }
 
 .nav-link:hover {
@@ -91,20 +97,6 @@ nav {
   gap: 20px;
 }
 
-.btn-outline {
-  background: transparent;
-  color: white;
-  border: 1px solid white;
-  padding: 8px 14px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.2s;
-  text-decoration: none;
-}
-
-.btn-outline:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
 
 .btn-primary {
   background: #611f69;
@@ -118,17 +110,6 @@ nav {
 
 .btn-primary:hover {
   background: #7a2a87;
-}
-
-.back-link {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  margin-right: 15px;
-}
-
-.back-link:hover {
-  text-decoration: underline;
 }
 
 /* ================= HERO & FEATURES ================= */
@@ -397,7 +378,7 @@ nav {
 
   nav.active { display: flex; }
 
-  .nav-link { width: 100%; text-align: left; }
+  .nav-link { width: 0 auto; text-align: left; }
 
   .nav-buttons { display: none; }
 
