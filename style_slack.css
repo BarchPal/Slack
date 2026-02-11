@@ -14,6 +14,7 @@ body {
   opacity: 0;
   transform: translateY(10px);
   animation: pageEnter 0.45s ease forwards;
+  will-change: transform;
 }
 .banner-image img {
   width: 100%;
@@ -47,6 +48,9 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .logo {
